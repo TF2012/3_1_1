@@ -32,6 +32,7 @@ public class User {
         this.age = age;
         this.grade = grade;
     }
+
     @Id
     public Long getId() {
         return id;

@@ -10,6 +10,13 @@
   <table>
     <tr>
       <td>
+        <label for="id">Enter id</label>
+        <input type="number" th:field="*{id}" id="id" required/>
+        <div th:if="${#fields.hasErrors('id')}" th:errors="*{id}">id error</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <label for="name">Enter name</label>
         <input type="text" th:field="*{name}" id="name" required/>
         <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}">name error</div>
